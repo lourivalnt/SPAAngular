@@ -1,3 +1,4 @@
+import { ProdutoService } from './produtos/produtos.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -35,6 +36,7 @@ import { DataBindingComponent } from './demos/data-binding/data-binding.componen
     [RouterModule.forRoot(rootRouterConfig, { useHash: false})]
   ],
   providers: [
+    ProdutoService,
     {provide: APP_BASE_HREF, useValue: '/'}
   ],
   bootstrap: [AppComponent]
